@@ -1,0 +1,13 @@
+data.txt
+notes.md
+
+
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/

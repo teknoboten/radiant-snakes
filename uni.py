@@ -30,7 +30,7 @@ df = pd.DataFrame({
 df['GTIN'] = df['GTIN'].astype(str)
 
 # Save DataFrame to CSV
-# df.to_csv('output.csv', index=False)
+df.to_csv('output.csv', index=False)
 
 # Save DataFrame to Excel
 df.to_excel('output.xlsx', index=False)

@@ -41,8 +41,8 @@ output_csv_path = 'output.csv'
 currentcat_csv_path = 'currentcat.csv'
 
 # Read the CSV files into DataFrames, ensuring GTIN is read as a string
-output_df = pd.read_csv(output_csv_path, dtype={'GTIN': 'str'})
-currentcat_df = pd.read_csv(currentcat_csv_path, dtype={'GTIN': 'str', 6: 'str', 7: 'str', 23: 'str', 24: 'str'})
+output_df = pd.read_csv(output_csv_path, dtype={'GTIN': 'str', 'SKU': 'str'})
+currentcat_df = pd.read_csv(currentcat_csv_path, dtype={'GTIN': 'str', 6: 'str', 7: 'str', 8: 'str', 23: 'str', 24: 'str', 25: 'str'})
 
 # Ensure column names are as expected
 # print("Output DataFrame columns:", output_df.columns)
@@ -71,4 +71,4 @@ new_items_df.to_csv('new_items.csv', index=False)
 # Display the DataFrame of new items to verify
 print(new_items_df)
 print('Success! You compared the things!')
-print('new items', len(new_items_df))
+print('new items:', len(new_items_df))

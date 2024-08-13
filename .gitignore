@@ -14,7 +14,7 @@ venv.bak/
 # data files
 *.csv
 *.txt
-*.xlxs
+*.xlsx
 
 purchase_order_import_template.xlsx
 data.txt
